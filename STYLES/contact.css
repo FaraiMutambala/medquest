@@ -1,0 +1,145 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('stethoscope-2.jpg');
+  background-size: cover;
+  font-family: sans-serif, arial;
+}
+.page-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.content{
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('stethoscope-2.jpg');
+  background-size: cover;
+  width: 80%;
+  border-color: #009688;
+  border-style: solid;
+  border-radius: 50px;
+}
+.menu{
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+.menu li{
+  list-style: none;
+  margin: 10px;
+}
+.menu li a{
+  text-transform: uppercase;
+  color:#fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+.menu li a:hover{
+  color: #009688;
+}
+.media-contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 40vh;
+  row-gap: 5px;
+}
+.div2{
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+img{
+  width: 45px;
+  height: auto;
+  border-radius: 10px;
+}
+p{
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+p:hover{
+  color: blue;
+}
+.form-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+  height: 40vh;
+}
+form{
+  width: 50%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input{
+  width: 63.5%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+textarea{
+  width: 65.5%;
+  height: 30px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+button{
+  padding: 10px;
+  width: 20%;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #009688;
+}
+button:hover{
+  cursor: pointer;
+}
+@media(max-width: 670px){
+  .menu li a{
+    font-size: 12px;
+  }
+  img{
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+  }
+  button{
+    font-size: 8px;
+  }
+  .div2{
+    justify-content: center;
+  }
+  .media-contact{
+    grid-template-columns: 50px 1fr;
+  }
+  textarea{
+    width: 65.5%;
+    height: 30px;
+
+  }
+}
+
+@media(max-width: 500px){
+  textarea{
+    width: 70%;
+    height: 30px;
+  }
+  button{
+    width: 120px;
+    font-size: 11px;
+  }
+}

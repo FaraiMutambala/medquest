@@ -1,0 +1,114 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif,arial;
+  text-align: center;
+  background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('stethoscope-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.menu{
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+.menu li{
+  list-style: none;
+  margin: 10px;
+}
+.menu li a{
+  text-transform: uppercase;
+  color:#fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+.menu li a:hover{
+  color: #009688;
+}
+.slide-show-container{
+  background-color: transparent;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.slide-show{
+  background-color: transparent;
+  border-radius: 20px;
+  width: 60%;
+  height: 50vh;
+  overflow: hidden;
+}
+.slide-show img{
+  border-radius: 0px;
+  width:100%;
+  height: 100%;
+  display: none;
+  object-fit: contain;
+
+}
+.page-content{
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 40vh;
+}
+.vision,
+.objectives{
+  background-color: transparent;
+}
+.mission,
+.goals{
+  background-color: transparent;
+}
+h1{
+  margin: 0px;
+  color: white;
+  text-transform: uppercase;
+}
+p{
+  margin: 0px;
+  color: white;
+  text-transform: lowerercase;
+}
+
+@media(max-width: 850px){
+  p{
+    font-size: 13px;
+  }
+  li{
+    font-size: 13px
+  }
+}
+.vision,
+.mission, 
+.goals,
+.objectives{
+
+}
+li{
+  color: white;
+}
+@media (max-width:700px){
+  p{
+    font-size: 10px;
+  }
+
+}
+@media (max-width:555.56px){
+  h1{
+    font-size: 15px;
+  }
+  li {
+    font-size: 10px;
+  }
+  .menu li a{
+    font-size: 12px;
+  }
+}
